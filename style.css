@@ -25,6 +25,8 @@ body{
     font-size: 16px;
     color: #00ce43;
 }
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -32,12 +34,13 @@ nav{
     max-width: 100%;
     line-height: 60px;
     border-bottom: 2px solid #00ce43;
+   
 }
 nav ul{
     display: flex;
     justify-content: space-evenly;
     gap: 4px;
-    list-style: none;
+    list-style: none; 
 }
 nav ul li{
     text-transform: uppercase;
@@ -55,4 +58,52 @@ nav ul li a:hover{
     background-color: #9BD093;
     color: #10111D;
   
+}
+
+/* HERO PAGE */
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+
+.myprofile img{
+    opacity: .9;
+    height: 100%;
+}
+.back-style .one {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgba(0,206,67,.10);
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    right: 0;
+    bottom: 0;
+}
+.back-style .two{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(0,206,67,.10);;
+    position: absolute;
+    top: 60%;
+    bottom: 0;
+    left: 35%;
+    right: 0;
+}
+.back-style .three{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: rgba(0,206,67,.10);;
+    position: absolute;
+    top: 35%;
+    bottom: 0;
+    left: 0;
 }
