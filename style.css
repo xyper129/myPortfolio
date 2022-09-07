@@ -5,8 +5,9 @@
     padding: 0;
     margin: 0;
 }
+
 body{
-    background-color: #2e2e2e;
+    background-color: #10111D;
     font-family: 'Open Sans', sans-serif;
 }
 .container{
@@ -15,14 +16,14 @@ body{
 }
 .nav-title a{
     text-decoration: none;
-    color: #E7007D;
+    color: #00966B;
     font-size: 24px;
 }
 .nav-title span{
     font-weight: 800;
     font-family: monospace;
     font-size: 16px;
-    color: #eeee;
+    color: #00ce43;
 }
 nav{
     display: flex;
@@ -30,7 +31,7 @@ nav{
     height: 60px;
     max-width: 100%;
     line-height: 60px;
-    border-bottom: 1px solid #E7007D;
+    border-bottom: 2px solid #00ce43;
 }
 nav ul{
     display: flex;
@@ -45,13 +46,13 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #E7007D;
+    color: #00966B;
     padding: 10px;
     transition: .50s ease-in-out;
     border-radius: 8px;
 }
 nav ul li a:hover{
-    background-color: #FDA5C8;
-    color: #2e2e2e;
+    background-color: #9BD093;
+    color: #10111D;
   
 }
