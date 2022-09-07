@@ -69,12 +69,17 @@ nav ul li a:hover{
     position: relative;
     height: calc(100vh - 60px);
     width: 100%;
+  
 }
 
 .myprofile img{
     opacity: .9;
     height: 100%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex: 40%;
 }
+
 .back-style .one {
     width: 250px;
     height: 250px;
@@ -82,7 +87,7 @@ nav ul li a:hover{
     background-color: rgba(0,206,67,.10);
     position: absolute;
     top: 15%;
-    left: 25%;
+    left: 0;
     right: 0;
     bottom: 0;
 }
@@ -94,7 +99,7 @@ nav ul li a:hover{
     position: absolute;
     top: 60%;
     bottom: 0;
-    left: 35%;
+    left: 20%;
     right: 0;
 }
 .back-style .three{
@@ -106,4 +111,29 @@ nav ul li a:hover{
     top: 35%;
     bottom: 0;
     left: 0;
+}
+
+.brief-background{
+    flex: 0 0 60%;
+    color: #e2e2e2;
+ 
+}
+.clickme {
+    border-radius: 8px;
+    margin-top: 50px;
+}
+.clickme p{
+   margin-bottom: 25px;
+   font-size: 14px;
+}
+.clickme a{
+    text-decoration: none;
+    border: 1px solid #00ce43;
+    border-radius: 8px;
+    padding: 8px;
+    color: #eeee;
+}
+.clickme a:hover{
+    background-color: #00966B;
+    color: #10111D;
 }
