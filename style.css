@@ -66,57 +66,26 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     height: calc(100vh - 60px);
     width: 100%;
-  
+    flex-wrap: wrap;
+
 }
 
 .myprofile img{
     opacity: .9;
-    height: 100%;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex: 40%;
-}
-
-.back-style .one {
-    width: 250px;
     height: 250px;
-    border-radius: 50%;
-    background-color: rgba(0,206,67,.10);
-    position: absolute;
-    top: 15%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.back-style .two{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: rgba(0,206,67,.10);;
-    position: absolute;
-    top: 60%;
-    bottom: 0;
-    left: 20%;
-    right: 0;
-}
-.back-style .three{
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    background-color: rgba(0,206,67,.10);;
-    position: absolute;
-    top: 35%;
-    bottom: 0;
-    left: 0;
+    width: 250px;
+    border-bottom: 4px solid #00ce43;
+    flex: 100%;
 }
 
+/* text part */
 .brief-background{
-    flex: 0 0 60%;
+    text-align: center;
+    font-size: 14px;
     color: #e2e2e2;
- 
+    flex: 100%;
 }
 .clickme {
     border-radius: 8px;
@@ -135,5 +104,69 @@ nav ul li a:hover{
 }
 .clickme a:hover{
     background-color: #00966B;
-    color: #10111D;
+    color: #10111D; 
+}
+
+@media screen and (min-width:800px) {
+
+    .main-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+    }
+    .myprofile img{
+        opacity: .9;
+        height: 100%;
+        width: 450px;
+        border-bottom: none;
+    }
+    
+    /* text part */
+    .brief-background{
+        text-align: left;
+        font-size: 16px;
+    }
+    .back-style .one {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-color: rgba(0,206,67,.10);
+        position: absolute;
+        top: 15%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .back-style .two{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: rgba(0,206,67,.10);;
+        position: absolute;
+        top: 60%;
+        bottom: 0;
+        left: 20%;
+        right: 0;
+    }
+    .back-style .three{
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        background-color: rgba(0,206,67,.10);;
+        position: absolute;
+        top: 35%;
+        bottom: 0;
+        left: 0;
+    }
+    
+}
+@media screen and (max-width:790px) {
+    nav{
+        display: block;
+        text-align: center;
+    }
+    nav ul{
+        display: block;
+        text-align: left;
+    }
 }
